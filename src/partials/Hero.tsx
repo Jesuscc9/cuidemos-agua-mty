@@ -1,7 +1,6 @@
 import {
   GradientText,
   HeroAvatar,
-  HeroSocial,
   Section,
 } from 'astro-boilerplate-components';
 
@@ -10,55 +9,42 @@ const Hero = () => (
     <HeroAvatar
       title={
         <>
-          Hi there, I'm <GradientText>Ixartz</GradientText> 👋
+          Hola, soy <GradientText>Gerardo</GradientText> 👋
         </>
       }
       description={
         <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            malesuada
-          </a>{' '}
-          nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet,{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            consectetur
-          </a>{' '}
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+          Soy Gerardo, actualmente estoy participando en Expociencias NL 2022,
+          con mi proyecto{' '}
+          <span className="text-cyan-400">
+            “Diseño de casas sustentables en Minecraft para la concientizacion
+            del cuida del agua”.
+          </span>{' '}
+          Por lo cual te invito al darle clic en el sig botón para que
+          descargues el mundo Minecraft y que mientras juegas, aprendamos juntos
+          de las diferentes alternativas que podemos utilizar en nuestros
+          hogares para cuidar, ahorrar y reciclar agua.
         </>
       }
       avatar={
         <img
-          className="h-80 w-64"
-          src="/assets/images/avatar.svg"
+          className="h-80 w-72 rounded-lg object-cover object-top"
+          src="/assets/images/gerardo.jpeg"
           alt="Avatar image"
           loading="lazy"
         />
       }
       socialButtons={
         <>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/twitter-icon.png"
-              alt="Twitter icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/facebook-icon.png"
-              alt="Facebook icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/linkedin-icon.png"
-              alt="Linkedin icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/youtube-icon.png"
-              alt="Youtube icon"
-            />
+          <a
+            href="https://www.mediafire.com/file/e979iclqdrll632/MC_Water_Project.zip/file"
+            className="mt-4"
+            target="_blank"
+            rel="noopener"
+          >
+            <button className="rounded-lg bg-cyan-500 px-8 py-4 transition-colors hover:bg-cyan-600">
+              DESCARGA EL MUNDO
+            </button>
           </a>
         </>
       }

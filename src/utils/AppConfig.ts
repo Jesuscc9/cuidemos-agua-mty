@@ -1,8 +1,8 @@
 export const AppConfig = {
-  site_name: 'Astro boilerplate',
-  title: 'Astro boilerplate',
-  description: 'Boilerplate built with Astro using React and Tailwind CSS',
-  author: 'Emma',
-  locale_region: 'en-us',
+  site_name: 'Cuidemos el Agua',
+  title: 'Cuidemos el Agua',
+  description: 'Proyecto "Cuidemos el Agua MTY" 2022 Expociencias NL',
+  author: 'Gerardo',
+  locale_region: 'mx-es',
   locale: 'en',
 };

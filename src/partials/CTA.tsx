@@ -9,11 +9,10 @@ const CTA = () => (
     <Newsletter
       title={
         <>
-          Subscribe to my <GradientText>Newsletters</GradientText>
+          Descarga el mundo <GradientText>Minecraft</GradientText>
         </>
       }
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero
-          esse non molestias eos excepturi, inventore atque cupiditate."
+      description="Si quieres aprender de manera divertida, ve al siguiente enlace para que puedas descargar el Mundo y jugarlo en tu propia computadora."
     />
   </Section>
 );
