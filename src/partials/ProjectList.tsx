@@ -21,7 +21,10 @@ const IMAGES_NAMES: string[] = [
 const InstalationSteps = () => {
   return (
     <div>
-      <Carousel autoPlay>
+      <Carousel
+        autoPlay
+        statusFormatter={(current, total) => `${current} de ${total}`}
+      >
         {IMAGES_NAMES.map((e) => {
           return (
             <img title="Step image" src={`/assets/images/steps/${e}`} key={e} />
