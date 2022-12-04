@@ -13,8 +13,6 @@ const Footer = () => {
       .querySelector('#hola')
       ?.querySelector<HTMLDivElement>('.border-t.border-gray-600.pt-5');
 
-    console.log(el);
-
     eval('el.innerHTML="Autor: Gerardo Alberto Rodríguez Bravo"');
   }, []);
 

@@ -1,13 +1,8 @@
 ---
-import type { IFrontmatter } from 'astro-boilerplate-components';
-
 import { Hero } from '@/partials/Hero';
 import { ProjectList } from '@/partials/ProjectList';
 import Base from '@/templates/Base.astro';
 import { AppConfig } from '@/utils/AppConfig';
-import { sortByDate } from '@/utils/Posts';
-
-const allPosts = await Astro.glob<IFrontmatter>('./posts/*.md');
 
 const { title } = AppConfig;
 const { description } = AppConfig;
@@ -15,5 +10,5 @@ const { description } = AppConfig;
 
 <Base head={{ title, description }}>
   <Hero />
-  <ProjectList />
+  <ProjectList client:load />
 </Base>
