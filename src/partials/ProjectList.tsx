@@ -49,7 +49,7 @@ const ProjectList = () => (
         target="_blank"
         href="https://www.canva.com/design/DAFQMseFB6w/djYSjJ3Itw_MqeWGyfG-Kg/view"
       >
-        <img src="/assets/images/poster.png" alt="" />
+        <img src="/assets/images/poster.svg" alt="" />
       </a>
     </Section>
 

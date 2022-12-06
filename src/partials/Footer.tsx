@@ -1,4 +1,3 @@
-/* eslint-disable unused-imports/no-unused-vars */
 /* eslint-disable no-eval */
 import { FooterCopyright, Section } from 'astro-boilerplate-components';
 import { useEffect } from 'react';
@@ -9,11 +8,10 @@ const Footer = () => {
   useEffect(() => {
     // Not proud of this code :c
 
-    const el = document
-      .querySelector('#hola')
-      ?.querySelector<HTMLDivElement>('.border-t.border-gray-600.pt-5');
-
-    eval('el.innerHTML="Autor: Gerardo Alberto Rodríguez Bravo"');
+    eval(`
+			const footerText = document?.querySelector('#hola')?.querySelector('.border-t.border-gray-600.pt-5')
+			footerText.innerHTML="Autor: Gerardo Alberto Rodríguez Bravo"
+		`);
   }, []);
 
   return (
